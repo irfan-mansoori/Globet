@@ -1,0 +1,252 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+header{
+  background: #010213;
+}
+li.nav-item:not(:last-child) {
+  margin-right: 15px;
+}
+header .nav-link{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+}
+header .nav-link:hover{
+  color: #fff;
+}
+li.nav-item.active a.nav-link::before {
+  width: calc(100% - 15px);
+}
+li.nav-item a.nav-link::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #337eee;
+}
+li.nav-item a.nav-link:hover::before {
+  width: calc(100% - 15px);
+}
+
+/* Body Content Styling Start */
+
+.customBtn{
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  color: #010213;
+  border-radius: 50px;
+  padding: 10px 30px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.py-6{
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
+}
+h1, h2, h3, h4, h5, h6, p{
+  margin-bottom: 0 !important;
+}
+.shortTitle{
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+.longTitle{
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.mainBanner {
+  background: #010213;
+}
+.bannerImgBox img{
+  width: 100%;
+}
+.bannerContent {
+  color: #fff;
+}
+.bannerContent span{
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.bannerContent h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: #337EEE; 
+}
+.bannerContent p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.revolutionMain {
+  color: #fff;
+}
+.revolutionMain h2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+.revolutionMain h3{
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #337EEE; 
+}
+.revolutionMain h4{
+  font-family: 'Poppins', sans-serif;
+  font-size: 194px;
+  font-weight: 700;
+  letter-spacing: -12px;
+  background: -webkit-linear-gradient(#000110 15%, #337eee 200%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: -170px;
+}
+.aboutHeading{
+  padding-top: 40px;
+}
+.aboutHeading span {
+  transform: rotate(-90deg);
+  display: inline-block;
+  letter-spacing: 3px;
+  white-space: nowrap;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+}
+.aboutHeading span::before {
+  content: '';
+  position: absolute;
+  right: 130%;
+  top: 8px;
+  width: calc(100% - 20px);
+  height: 1px;
+  background: #707070;
+}
+
+.mainNews{
+  background: #010213;
+  color: #fff;
+}
+.newsContent h3{
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #337EEE;
+}
+.newsContent span{
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+.newsContent p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.newsletterContent h4{
+  color: #337EEE;
+}
+.newsletterContent p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.subscribeForm{
+  max-width: 700px;
+  margin: 0 auto;
+  background: #F6F7FF;
+  padding: 10px;
+  border-radius: 30px;
+}
+.subscribeForm input[type="email"]{
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  background: none;
+  border: none;
+  box-shadow: none;
+} 
+.subscribeBtn {
+  background: #337EEE;
+  border: none;
+  color: #fff;
+  box-shadow: 0 3px 54px rgb(0 0 0 / 14%);
+}
+
+.getInTouch{
+  background: #010213;
+  color: #fff;
+}
+.getInTouch input.form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid;
+  border-radius: 0;
+  font-weight: 600;
+  color: rgb(255 255 255 / 30%);
+}
+.iconBox {
+  display: flex;
+  align-items: center;
+}
+.iconBox .iconContent {
+  margin-left: 20px;
+}
+.iconBox .iconContent h4{
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+.iconBox .iconContent p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+.ctaIcon{
+  color: #337eee;
+  font-size: 22px;
+  display: flex;
+  align-self: center;
+}
+footer{
+  background: #000110;
+}
+.footerContent{
+  color: #fff;
+}
+
+/* Body Content Styling End */
